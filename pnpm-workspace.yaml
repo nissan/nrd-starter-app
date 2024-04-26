@@ -3,3 +3,6 @@ packages:
   - "packages/*"
   - "apps/examples/*"
   - "packages/examples/*"
+  - "apps/examples/nextjs/*"
+  - "apps/examples/nestjs/*"
+  - "apps/examples/ruby-on-rails/*"
