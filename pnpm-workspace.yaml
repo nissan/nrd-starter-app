@@ -6,3 +6,4 @@ packages:
   - "apps/examples/nextjs/*"
   - "apps/examples/nestjs/*"
   - "apps/examples/ruby-on-rails/*"
+  - "apps/examples/scala/*"

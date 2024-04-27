@@ -18,7 +18,7 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
       turbo:
-        specifier: latest
+        specifier: ^1.13.3
         version: 1.13.3
 
   apps/examples/nestjs/sample-api:
@@ -190,6 +190,8 @@ importers:
         version: 5.4.5
 
   apps/examples/ruby-on-rails/blog: {}
+
+  apps/examples/scala/sample-play-framework: {}
 
   packages/examples/eslint-config:
     devDependencies:
