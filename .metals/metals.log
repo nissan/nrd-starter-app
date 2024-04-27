@@ -3582,3 +3582,9 @@ WARNING: Unmatched cancel notification for request id 1
 2024.04.27 11:19:13 INFO  Scala CLI started for /Users/nissan/code/nrd-starter-app[0m
 2024.04.27 11:19:13 WARN  no build tool detected in workspace '/Users/nissan/code/nrd-starter-app'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 2024.04.27 11:19:13 WARN  Build server is not auto-connectable.[0m
+Apr 27, 2024 12:35:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 27, 2024 12:36:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 27, 2024 12:36:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
