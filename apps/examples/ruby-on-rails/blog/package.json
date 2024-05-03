@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "bin/rails test:all",
+    "install": "bundle install",
     "dev": "bin/rails server --port 3002",
     "build": "bin/rails assets:precompile"
   },
