@@ -1,0 +1,14 @@
+{
+    "name": "sample-fastapi-app",
+    "version": "1.0.0",
+    "description": "Sample FastAPI framework app",
+    "scripts": {
+      "install": "pip install -r requirements.txt",
+      "dev": "fastapi dev main.py",
+      "start": "fastapi run"
+    },
+    "keywords": [],
+    "author": "Nissan Dookeran",
+    "license": "ISC"
+  }
+  

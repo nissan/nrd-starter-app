@@ -8,3 +8,4 @@ packages:
   - "apps/examples/ruby-on-rails/*"
   - "apps/examples/scala/*"
   - "apps/examples/react/*"
+  - "apps/examples/python/*"
