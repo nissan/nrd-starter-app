@@ -262,6 +262,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
 
+  apps/examples/python/sample-fast-api: {}
+
   apps/examples/react/sample-react-app:
     dependencies:
       react:
