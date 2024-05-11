@@ -5,7 +5,7 @@
   "scripts": {
     "test": "gradle test",
     "install": "gradle assemble",
-    "dev": "gradle bootRun",
+    "dev": "SERVER_PORT=3008 gradle bootRun",
     "build": "gradle build"
   },
   "keywords": [],

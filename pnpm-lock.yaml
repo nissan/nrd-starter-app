@@ -21,6 +21,10 @@ importers:
         specifier: ^1.13.3
         version: 1.13.3
 
+  apps/examples/java/spring-boot-demo: {}
+
+  apps/examples/java/structurizr: {}
+
   apps/examples/nestjs/sample-api:
     dependencies:
       '@nestjs/common':
@@ -307,8 +311,6 @@ importers:
   apps/examples/ruby-on-rails/blog: {}
 
   apps/examples/scala/sample-play-framework: {}
-
-  apps/examples/springboot/demo: {}
 
   packages/examples/eslint-config:
     devDependencies:

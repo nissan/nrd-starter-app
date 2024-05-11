@@ -1,0 +1,11 @@
+{
+  "name": "structurizr-lite",
+  "version": "1.0.0",
+  "description": "Wrapper for Structurizr Lite",
+  "scripts": {
+    "dev": "java -Djdk.util.jar.enableMultiRelease=false -Dserver.port=3009 -jar structurizr-lite.war ./docs"
+  },
+  "keywords": [],
+  "author": "Nissan Dookeran",
+  "license": "MIT"
+}
