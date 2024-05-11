@@ -308,6 +308,8 @@ importers:
 
   apps/examples/scala/sample-play-framework: {}
 
+  apps/examples/springboot/demo: {}
+
   packages/examples/eslint-config:
     devDependencies:
       '@typescript-eslint/eslint-plugin':
