@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Wrapper for Structurizr Lite",
   "scripts": {
+    "install": "[ ! -f ./structurizr-lite.war ] && curl -o ./structurizr-lite.war https://github.com/structurizr/lite/releases/download/v2024.03.03/structurizr-lite.war || true",
     "dev": "java -Djdk.util.jar.enableMultiRelease=false -Dserver.port=3009 -jar structurizr-lite.war ./docs"
   },
   "keywords": [],
