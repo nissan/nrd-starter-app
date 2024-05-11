@@ -1,8 +1,7 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Wrapper for Ruby on Rails blog app",
   "scripts": {
     "test": "bin/rails test:all",
     "install": "bundle install",
@@ -11,5 +10,5 @@
   },
   "keywords": [],
   "author": "Nissan Dookeran",
-  "license": "ISC"
+  "license": "MIT"
 }

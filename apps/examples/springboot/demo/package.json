@@ -1,0 +1,14 @@
+{
+  "name": "sample-springboot-app",
+  "version": "1.0.0",
+  "description": "Wrapper for Spring Boot app",
+  "scripts": {
+    "test": "gradle test",
+    "install": "gradle assemble",
+    "dev": "gradle bootRun",
+    "build": "gradle build"
+  },
+  "keywords": [],
+  "author": "Nissan Dookeran",
+  "license": "MIT"
+}

@@ -6,6 +6,8 @@ The "Nerd Starter App" may not have any practical value, however I wanted a way 
 - [Python 3.12](https://www.python.org/downloads/)
   - Note I use [Mamba](https://github.com/conda-forge/miniforge/releases/tag/24.3.0-0) to create an environment here for development
 - [Scala Build Tool (sbt)](https://www.scala-sbt.org/1.x/docs/offline/Setup.html)
+- Java, Maven, [Gradle](https://gradle.org/install/) for the [Spring Boot](https://docs.spring.io/spring-boot/installing.html) app
+  - Also used [SDKMan](https://sdkman.io/) for installing Spring Boot tooling
 
 # Built on top the Turborepo starter
 
@@ -47,6 +49,8 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
   - storybook will run on port 3006
 - `sample-fast-api`: A sample API using the Python-based FastAPI framework, example app
   - runs on port 3007
+- `demo`: A sample barebone REST API in Java using the Spring Boot framework
+  - runs on port 3008
 
 ### Utilities
 
