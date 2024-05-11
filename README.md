@@ -1,6 +1,15 @@
-# Turborepo starter
+#NRD-Starter-App
+The "Nerd Starter App" may not have any practical value, however I wanted a way to initialise multiple app frameworks and languages with an example as I dive deeper in different directions over time and also dive deeper into Turbo as a repository management tool for growingly complex scenarios. As such, some pre-requisite installations are assumed:
+- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) (or a node version manager with NodeJS >=20 installed) with [pnpm](https://pnpm.io/installation) enabled
+- [rbenv](https://github.com/rbenv/rbenv)
+  - This allows us to get Ruby on Rails 7
+- [Python 3.12](https://www.python.org/downloads/)
+  - Note I use [Mamba](https://github.com/conda-forge/miniforge/releases/tag/24.3.0-0) to create an environment here for development
+- [Scala Build Tool (sbt)](https://www.scala-sbt.org/1.x/docs/offline/Setup.html)
 
-This is an official starter Turborepo.
+# Built on top the Turborepo starter
+
+This is built on top of the official starter Turborepo.
 
 ## Using this example
 
@@ -12,7 +21,7 @@ npx create-turbo@latest
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+The original Turborepo included the following packages/apps:
 
 ### Apps and Packages
 
@@ -23,11 +32,15 @@ This Turborepo includes the following packages/apps:
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
+#### Additional Apps and Packages
+- `sample-storybook`: A [Storybook](https://storybook.js.org/) frontend workshop for building UI components and pages in isolation, this example that works with NextJS
+- `sample-api`: A Sample API using [NestJS](https://nestjs.com/), a progressive Node.js framework for building efficient, reliable and scalable server-side applications
+- `sample-fast-api`: A sample API using the Python-based FastAPI framework, example app
+- `blog`: A sample [Ruby on Rails](https://rubyonrails.org/) 7.1 web app
+- `sample-play-framework`: A sample API using the Play framework that makes it easy to build web applications with Java & Scala
 ### Utilities
 
 This Turborepo has some additional tools already setup for you:
-
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
@@ -37,7 +50,7 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd nrd-starter-app
 pnpm build
 ```
 
