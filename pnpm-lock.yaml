@@ -306,6 +306,8 @@ importers:
 
   apps/examples/ruby-on-rails/blog: {}
 
+  apps/examples/rust/actix-app: {}
+
   apps/examples/rust/yew-app: {}
 
   apps/examples/scala/sample-play-framework: {}
