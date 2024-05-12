@@ -1,16 +1,18 @@
 services:
   db:
-    image: postgres:15-alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: postgres-latest-container
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=Password1234!
-      - POSTGRES_DB=nrdStarterAppDatabase
+      - POSTGRES_MULTIPLE_DATABASES=payloadwebsite,strapicms
     volumes:
       - ../../db/postgres:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d nrdStarterAppDatabase"]
+      test: ["CMD-SHELL", "pg_isready -U admin -d admin"]
       interval: 10s
       retries: 5
