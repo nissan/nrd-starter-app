@@ -1,9 +1,9 @@
 {
-    "name": "sample-actix-app",
+    "name": "sample-rocket-app",
     "version": "1.0.0",
-    "description": "Sample Actix framework app",
+    "description": "Sample Rocket framework app",
     "scripts": {
-      "dev": "PORT=3013 cargo run",
+      "dev": "ROCKET_PORT=3014 cargo run",
       "build": "cargo build"
     },
     "keywords": [],
