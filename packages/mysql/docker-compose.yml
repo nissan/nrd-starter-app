@@ -1,6 +1,6 @@
 services:
   db:
-    image: mysql:latest
+    image: mysql:8.0.37-bookworm
     container_name: mysql-latest-container
     ports:
       - "3306:3306"
@@ -8,7 +8,7 @@ services:
       - MYSQL_ROOT_PASSWORD=P@ssword1234!
       - MYSQL_DATABASE=nrdStarterAppDatabase
     volumes:
-    - ./db:/var/lib/mysql 
+    - ../../db/mysql:/var/lib/mysql 
   web:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin-container
