@@ -39,3 +39,4 @@ yarn-error.log*
 
 .scala-build/
 .metals/
+db/
