@@ -1,32 +1,22 @@
+networks:
+  backend-network:
+    driver: bridge
 services:
-  db:
+  mongo:
     image: mongo:latest
     container_name: mongo-latest-container
+    restart: always
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=P@ssword1234!
-      - MONGO_INITDB_DATABASE=nrdStarterAppDatabase
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
-      - ./mongo_data:/data/db
+      - ../../db/mongo:/data/db
+    networks:
+      - backend-network
     healthcheck:
-      test: ["CMD", "bash", "-c", "echo 'db.runCommand(\"ping\").ok' | mongo --host mongo:27017/test --quiet"]
+      test: ["CMD", "bash", "-c", "echo 'db.runCommand(\"ping\").ok' | mongosh localhost:27017/test --quiet"]
       interval: 10s
       retries: 5
-      start_period: 30s
-
-  web:
-    image: mongo-express:latest
-    container_name: mongo-express-container
-    ports:
-      - "3011:8081"
-    environment:
-      - ME_CONFIG_OPTIONS_EDITORTHEME=ambiance
-      - ME_CONFIG_MONGODB_SERVER=db
-      - ME_CONFIG_MONGODB_AUTH_USERNAME=admin
-      - ME_CONFIG_MONGODB_AUTH_PASSWORD=P@ssword1234!
-      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
-    depends_on:
-      db:
-        condition: service_healthy
+      start_period: 5s
