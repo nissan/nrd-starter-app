@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres-latest-container
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=P@ssword1234!
+      - POSTGRES_DB=nrdStarterAppDatabase
+    volumes:
+      - ../../db/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d nrdStarterAppDatabase"]
+      interval: 10s
+      retries: 5
