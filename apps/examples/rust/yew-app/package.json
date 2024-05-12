@@ -1,0 +1,13 @@
+{
+    "name": "sample-yew-app",
+    "version": "1.0.0",
+    "description": "Sample Yew framework app",
+    "scripts": {
+      "dev": "trunk serve",
+      "build": "trunk build"
+    },
+    "keywords": [],
+    "author": "Nissan Dookeran",
+    "license": "ISC"
+  }
+  

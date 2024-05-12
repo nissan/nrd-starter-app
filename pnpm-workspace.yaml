@@ -9,4 +9,5 @@ packages:
   - "apps/examples/scala/*"
   - "apps/examples/react/*"
   - "apps/examples/python/*"
-  - "apps/examples/java/*"
+  # - "apps/examples/java/*"
+  - "apps/examples/rust/*"
