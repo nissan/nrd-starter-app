@@ -1,0 +1,13 @@
+{
+    "name": "sample-actix-app",
+    "version": "1.0.0",
+    "description": "Sample Actix framework app",
+    "scripts": {
+      "dev": "PORT=3013 cargo run",
+      "build": "cargo build"
+    },
+    "keywords": [],
+    "author": "Nissan Dookeran",
+    "license": "ISC"
+  }
+  
